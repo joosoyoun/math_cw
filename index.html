@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>가분수·대분수 문제집</title>
+  <style>
+    canvas { border: 1px solid #ccc; margin: 10px 0; }
+    .problem-block { margin-bottom: 30px; }
+  </style>
+</head>
+<body>
+  <div id="nameBlock">
+    <h3>학생 이름을 입력하세요:</h3>
+    <input type="text" id="studentNameInput" />
+    <button id="saveNameBtn">시작하기</button>
+  </div>
+
+  <main id="problems">
+    <section class="problem-block">
+      <div class="problem-title">문제 1</div>
+      <canvas class="problem-canvas" id="canvas0" width="600" height="260"></canvas>
+      <button onclick="clearCanvas(0)">지우기</button>
+      <button onclick="saveCanvas(0)">저장</button>
+    </section>
+    <section class="problem-block">
+      <div class="problem-title">문제 2</div>
+      <canvas class="problem-canvas" id="canvas1" width="600" height="260"></canvas>
+      <button onclick="clearCanvas(1)">지우기</button>
+      <button onclick="saveCanvas(1)">저장</button>
+    </section>
+    <section class="problem-block">
+      <div class="problem-title">문제 3</div>
+      <canvas class="problem-canvas" id="canvas2" width="600" height="260"></canvas>
+      <button onclick="clearCanvas(2)">지우기</button>
+      <button onclick="saveCanvas(2)">저장</button>
+    </section>
+  </main>
+
+  <script type="module" src="./script.js"></script>
+</body>
+</html>
